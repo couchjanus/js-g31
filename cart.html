@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+        <a href="#!" class="brand fas fa-shopping-cart">&nbsp;Shopaholic</a>
+        <nav class="navbar" id="navbar">
+            <!-- navigation -->
+            <a href="index.html">Home</a> 
+            <a href="catalog.html">Catalog</a> 
+            <a href="about.html">About</a> 
+            <a href="contact.html">Contact</a> 
+        </nav>
+        <nav class="toolbar">
+            <a href="#" class="far fa-heart"></a>
+            <a href="cart.html" class="fas fa-dolly-flatbed"></a>
+            <a href="#" class="far fa-user"></a>
+        </nav>
+  </header> 
+
+     <!-- breadcrumb -->
+  <section class="bg-light mt-5">
+      <div class="container py-5">
+        <div class="breadcrumb-container">
+          <div class="breadcrumb-title">Shopping cart</div>
+          
+          <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Cart</li>
+          </ul>
+          
+        </div>
+      </div>
+  </section>
+
+  <section class="py-5">
+      
+        <div class="container">
+          <div class="cart-wrapper">
+          
+            <div class="cart-header"><h3 class="text-uppercase mb-3">Shopping cart</h3></div>
+            
+            <div class="cart-content">
+  
+              <div class="table-responsive mb-4">
+                  
+                  <table class="table text-nowrap">
+                    
+                    <thead class="bg-light py-5">
+                      <tr class="table-row">
+                        <th class="p-3"></th>
+                        <th class="py-3 align-middle"><strong class="text-uppercase">Product</strong></th>
+                        <th class="py-3 align-middle"><strong class="text-uppercase">Price</strong></th>
+                        <th class="py-3 align-middle"><strong class="text-uppercase">Quantity</strong></th>
+                        <th class="py-3 align-middle"><strong class="text-uppercase">Total</strong></th>
+                        <th class="p-3"></th>
+                      </tr>
+                    </thead>
+                    
+                    <tbody>
+                      <tr>
+                        <td class="py-3 align-middle">
+                          <a class="reset-anchor d-block" href="detail.html"><img src="images/product-4.jpg" alt="..." width="40"></a>
+                          
+                          
+                        </td>
+                        <td class="py-3 align-middle">
+                          
+                          <strong><a class="reset-anchor" href="detail.html">Red digital smartwatch</a></strong>
+                        </td>
+                        <td class="p-3 align-middle">
+                          <p class="mb-0 small">$250</p>
+                        </td>
+                        
+                        <td class="p-3 align-middle">
+                            <div class="quantity">
+                              <button><i class="fas fa-caret-left"></i></button>
+                              <input type="text" value="1">
+                              <button><i class="fas fa-caret-right"></i></button>
+                            </div>
+                        </td>
+                        <td class="p-3 align-middle"><p>$250</p></td>
+                        <td class="p-3 align-middle"><a class="reset-anchor remove" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a></td>
+                      </tr>
+                      
+                      <tr>
+                        <td class="py-3 align-middle">
+                          <a class="reset-anchor d-block" href="detail.html"><img src="images/product-5.jpg" alt="..." width="40"></a>
+                        
+                          
+                        </td>
+                        <td class="py-3 align-middle">
+                          
+                          <strong><a class="reset-anchor align-middle" href="detail.html">Apple watch</a></strong>
+                        </td>
+                        <td class="align-middle"><p class="price">250</p></td>
+                        <td class="align-middle">
+                            <div class="quantity">
+                              <button><i class="fas fa-caret-left"></i></button>
+                              <input type="text" value="1">
+                              <button><i class="fas fa-caret-right"></i></button>
+                            </div>
+                        </td>
+                        <td class="align-middle">
+                          <p class="mb-0 total">250</p>
+                        </td>
+                        <td class="align-middle"><a class="reset-anchor remove" href="#!"><i class="fas fa-trash-alt"></i></a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              
+            </div>
+
+            <div class="cart-sidebar">
+                
+              <div class="card bg-light">
+                  <div class="card-body">
+                    <h4 class="text-uppercase mb-4">Cart total</h4>
+                    <ul class="list-unstyled">
+                      <li class="d-flex align-items-center justify-content-between">
+                        <strong class="text-uppercase">Subtotal: </strong>&nbsp;
+                        <span class="subtotal">250</span>
+                      </li>
+                      <li class="d-flex align-items-center justify-content-between">
+                        <strong class="text-uppercase">Tax: </strong>&nbsp;
+                        <span class="subtotal">25</span>
+                      </li>
+                      <li class="border-bottom my-2"></li>
+                      <li class="d-flex align-items-center justify-content-between mb-4">
+                        <strong class="text-uppercase">Total:</strong>&nbsp;
+                        <span class="total">275</span>
+                      </li>
+                      <li>
+                        <form action="#">
+                          <div class="input-group">
+                            <input class="form-control" type="text" placeholder="Enter your coupon">
+                            <button class="btn btn-primary w-100" type="submit"> <i class="fas fa-gift"></i>&nbsp;Apply coupon</button>
+                          </div>
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+  
+            </div>
+
+            <div class="cart-footer bg-light">
+                <nav class="text-center">
+                    <a class="btn btn-link text-dark" href="shop.html"><i class="fas fa-long-arrow-alt-left"></i> Continue shopping</a>
+                    <a class="btn btn-outline-dark" href="checkout.html"> Procceed to checkout<i class="fas fa-long-arrow-alt-right"></i></a>
+                </nav>
+              
+            </div>
+  
+          </div>
+        </div>
+  </section>
+
+  <footer>
+    <!-- Footer main -->
+    <section class="footer-main">
+      <div class="footer-main-item">
+        <h2 class="footer-title">About</h2>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-main-item">
+        <h2 class="footer-title">Resources</h2>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">eBooks</a></li>
+          <li><a href="#">Webinars</a></li>
+        </ul>
+      </div>
+      <div class="footer-main-item">
+        <h2 class="footer-title">Contact</h2>
+        <ul>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Sales</a></li>
+          <li><a href="#">Advertise</a></li>
+        </ul>
+      </div>
+      <div class="footer-main-item">
+        <h2 class="footer-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter to get our latest news.</p>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address">
+          <input type="submit" value="Subscribe">
+        </form>
+      </div>
+    </section>
+  
+    <!-- Footer social -->
+    <section class="footer-social">
+      <ul class="footer-social-list">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </section>
+  
+    <!-- Footer legal -->
+    <section class="footer-legal">
+      <ul class="footer-legal-list">
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+      </ul>
+    </section>
+  </footer>
+
+</body>
+</html>

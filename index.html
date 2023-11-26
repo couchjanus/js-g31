@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Document</title>
+    
+
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <div class="d-none">
+    <svg width="0" height="0" class="hidden">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="delivery-time" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M62 46v-5l-8-7h-8"/>
+        <circle cx="24" cy="54" r="4"/>
+        <circle cx="54" cy="54" r="4"/>
+        <path d="M50 54H28m-8 0h-4v-8h46v8h-4M24.5 24H46v22m-30 0V29.8M2 38h6m-2 8h2"/>
+        <circle cx="14" cy="18" r="12"/>
+        <path d="M14 12v8h6"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="helpline-24h" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M52.3 48.8c1.2.8 3 1.9 2.7 4.3S51 62 43 62s-17.7-6.3-26.2-14.8S2 28.9 2 21 9 9.3 10.9 9s3.6 1.5 4.3 2.7l6 9.2a4.3 4.3 0 0 1-1.1 5.8c-2.6 2.1-6.8 4.6 2.9 14.3s12.3 5.4 14.3 2.9a4.3 4.3 0 0 1 5.8-1.1z"/>
+        <path d="M54 2l-6 14h14m-4-6v12m-14 0H32l8.5-10v-.2A6 6 0 0 0 32 3.6"/>
+      </symbol>
+
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="label-tag" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M25.6 61L3 38.4 38.4 3l21.2 1.4L61 25.6 25.6 61z"/>
+        <circle cx="48" cy="15" r="4"/>
+        <path d="M31.3 21.4l11.3 11.3m-22.6 0l8.5 8.5M25.6 27l5.7 5.7"/>
+      </symbol>
+
+    </svg>
+  </div>
+  
+  <header class="page-header">
+      <a href="#!" class="brand fas fa-shopping-cart">&nbsp;Shopaholic</a>
+      <label for="toggler-btn">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label>
+      <input type="checkbox" id="toggler-btn">
+
+      <nav class="navbar" id="navbar">
+            <!-- navigation -->
+            <a href="index.html">Home</a> 
+            <a href="catalog.html">Catalog</a> 
+            <a href="blog.html">Blog</a> 
+            <a href="about.html">About</a> 
+            <a href="contact.html">Contact</a> 
+      </nav>
+      <nav class="toolbar">
+            <a href="#" class="far fa-heart"></a>
+            <a href="cart.html" class="fas fa-dolly-flatbed"></a>
+            <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
+      </nav>
+  </header>  
+
+    <section class="hero bg-cover bg-center py-5 mt-5" style="background: url(images/bg-banner.jpg);">
+        <div class="container py-5 px-4">
+            <p>New Inspiration 2024</p>
+            <h1>15% off on new season</h1>
+            <a href="" class="btn btn-primary">Browse collection</a>
+        </div>
+
+    </section>
+    <!-- CATEGORIES SECTION-->
+    <section class="py-5">
+      <div class="container">
+
+        <header class="text-center">
+          <p class="text-muted text-uppercase mb-1">Carefully created collections</p>
+          <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+        </header>
+
+        <div class="carousel">
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Electronic">
+                  <img src="images/product-1.jpg" alt="Electronic" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Electronic">Electronic</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Bags">
+                  <img src="images/product-2.jpg" alt="Bags" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Bags">Bags</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="T-Shirts">
+                  <img src="images/product-3.jpg" alt="T-Shirts" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="T-Shirts">T-Shirts</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Watches">
+                  <img src="images/product-4.jpg" alt="Watches" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Watches">Watches</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Shoes">
+                  <img src="images/product-5.jpg" alt="Shoes" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Shoes">Shoes</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Parphume">
+                  <img src="images/product-6.jpg" alt="Parphume" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Parphume">Parphume</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Parphume">
+                  <img src="images/product-7.jpg" alt="Parphume" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Parphume">Parphume</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Electronic">
+                  <img src="images/product-1.jpg" alt="Electronic" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Electronic">Electronic</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Bags">
+                  <img src="images/product-2.jpg" alt="Bags" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Bags">Bags</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="T-Shirts">
+                  <img src="images/product-3.jpg" alt="T-Shirts" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="T-Shirts">T-Shirts</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Watches">
+                  <img src="images/product-4.jpg" alt="Watches" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Watches">Watches</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Shoes">
+                  <img src="images/product-5.jpg" alt="Shoes" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Shoes">Shoes</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Parphume">
+                  <img src="images/product-6.jpg" alt="Parphume" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Parphume">Parphume</strong>
+                </a>
+              </div>
+              <div class="slide carousel-item">
+                <a class="category-item" href="#!" data-category="Parphume">
+                  <img src="images/product-7.jpg" alt="Parphume" height="100" with="250">
+                  <strong class="category-item category-item-title" data-category="Parphume">Parphume</strong>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- catalog -->
+    <section class="catalog" id="catalog">
+      <div class="container">
+        <header class="header">
+          <h2>Our <span>Products</span></h2>
+        </header>
+        <!-- product-container -->
+        <div class="product-container">
+          <div class="product">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#productView" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <div class="badge text-white bg-sale">Sale</div>
+              <img src="images/product-1.jpg">
+            </div>
+
+            <div class="content">
+              <h3>Product Name</h3>
+              <div class="price">12</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#productView" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="images/product-2.jpg">
+            </div>
+
+            <div class="content">
+              <h3>Product Name</h3>
+              <div class="price">12</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#productView" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <div class="badge text-white bg-sale">Sale</div>
+              <img src="images/product-3.jpg">
+            </div>
+
+            <div class="content">
+              <h3>Product Name</h3>
+              <div class="price">12</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#productView" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+              <img src="images/product-4.jpg">
+            </div>
+
+            <div class="content">
+              <h3>Product Name</h3>
+              <div class="price">12</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#productView" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+              <div class="badge text-white bg-new">New</div>
+              <img src="images/product-7.jpg">
+            </div>
+
+            <div class="content">
+              <h3>Product Name</h3>
+              <div class="price">12</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#productView" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+              <img src="images/product-5.jpg">
+            </div>
+
+            <div class="content">
+              <h3>Product Name</h3>
+              <div class="price">12</div>
+            </div>
+          </div>
+          <div class="product">
+            <div class="icons">
+              <a href="#" class="fas fa-shopping-cart"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#productView" class="fas fa-eye"></a>
+            </div>
+
+            <div class="image">
+              <img src="images/product-6.jpg">
+            </div>
+
+            <div class="content">
+              <h3>Product Name</h3>
+              <div class="price">12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES-->
+    <section class="py-5 bg-light">
+        <div class="container">
+          <div class="col-3 text-center py-3">
+            
+              <div class="d-flex icon">
+                  
+                  <svg class="svg-icon svg-icon-big svg-icon-light">
+                    <use xlink:href="#delivery-time"> </use>
+                  </svg>
+                  <div class="text-start ms-3">
+                    <h3 class="text-uppercase mb-1">Free shipping</h3>
+                    <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
+                  </div>
+
+              </div>
+            
+              <div class="d-flex icon">
+                <svg class="svg-icon svg-icon-big svg-icon-light">
+                  <use xlink:href="#helpline-24h"> </use>
+                </svg>
+                
+                <div class="text-start ms-3">
+                    <h3 class="text-uppercase mb-1">24 x 7 service</h3>
+                    <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
+                </div>
+              </div>
+            
+              <div class="d-flex icon">
+                <svg class="svg-icon svg-icon-big svg-icon-light">
+                  <use xlink:href="#label-tag"> </use>
+                </svg>
+
+                <div class="text-start ms-3">
+                    <h3 class="text-uppercase mb-1">Festivaloffers</h3>
+                    <p class="text-sm mb-0 text-muted">Free shipping worldwide</p>
+                </div>
+              </div>
+          </div>
+        </div>
+    </section>
+      <!-- divider -->
+    <section class="divider bg-cover bg-center bg-fixed py-5 mt-5" style="background: url(./images/divider-bg.jpg)">
+          <!-- container -->
+          <div class="container py-5 px-4 text-right">
+              <p>New actions and events</p>
+              <h2>Notify me for events please </h2>
+              <a href="shop.html">Subscribe</a>
+          </div>
+    </section>
+    
+
+<footer>
+  <!-- Footer main -->
+  <section class="footer-main">
+    <div class="footer-main-item">
+      <h2 class="footer-title">About</h2>
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-main-item">
+      <h2 class="footer-title">Resources</h2>
+      <ul>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">eBooks</a></li>
+        <li><a href="#">Webinars</a></li>
+      </ul>
+    </div>
+    <div class="footer-main-item">
+      <h2 class="footer-title">Contact</h2>
+      <ul>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Advertise</a></li>
+      </ul>
+    </div>
+    <div class="footer-main-item">
+      <h2 class="footer-title">Stay Updated</h2>
+      <p>Subscribe to our newsletter to get our latest news.</p>
+      <form>
+        <input type="email" name="email" placeholder="Enter email address">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer social -->
+  <section class="footer-social">
+    <ul class="footer-social-list">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+  </section>
+
+  <!-- Footer legal -->
+  <section class="footer-legal">
+    <ul class="footer-legal-list">
+      <li><a href="#">Terms &amp; Conditions</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li>&copy; 2024 Copyright Shopaholic Inc.</li>
+    </ul>
+  </section>
+</footer>
+
+<div class="modal" id="productView">
+  <div class="modal-dialog">
+    <a href="#!" title="Close" class="close fas fa-times"></a>
+    <div class="modal-body">
+
+      <aside><img src="images/product-5.jpg"></aside>
+
+      <main>
+        <div class="info-container">
+
+          <div class="info-header"><h2>T-Shirt New York</h2></div>
+
+          <div class="info-price">$800.00</div>
+          <div class="info-shipping">Free shipping</div>
+          
+          <div class="info-button">
+            <a href="#!" class="btn btn-submit"><i class="fas fa-cart-plus"></i> Add to Cart</a>
+          </div>
+
+          <div class="qty info-qty">
+            Qty. <input 
+                    type="number" 
+                    value="1"
+                    min="1"
+                    max="10"
+                    required 
+                    />
+          </div>
+
+          <div class="info-description">
+            Info Brand We open source it for you  if you want to use it on your ecommerce. 
+          </div>
+
+        </div>
+      </main>
+
+    </div>
+  </div>
+</div>
+
+<!-- dialog -->
+
+<dialog id="login">
+
+  <a href="#!" onclick="window.login.close();" title="Close" class="close fas fa-times"></a>
+
+  <div class="login-container">
+  <div class="col-left">
+    <div class="login-text">
+      <h2>Welcome Back</h2>
+      <p>Create your account.<br>It's totally free.</p>
+      <a class="btn" href="">Sign Up</a>
+    </div>
+  </div>
+
+  <div class="col-right">
+    <div class="login-form">
+      <h2>Login</h2>
+      <form>
+        <p>
+          <label>Username or email address<span>*</span></label>
+          <input type="text" placeholder="Username or Email" required>
+        </p>
+        <p>
+          <label>Password<span>*</span></label>
+          <input type="password" placeholder="Password" required>
+        </p>
+        <p>
+          <input type="submit" value="Sing In" />
+        </p>
+        <p>
+          <a href="">Forget Password?</a>
+        </p>
+      </form>
+
+    </div>
+  </div>
+  </div>
+  
+</dialog>
+
+
+</body>
+</html>
