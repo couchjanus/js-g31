@@ -11,7 +11,7 @@
   <header class="page-header">
     <a href="#!" class="brand fas fa-shopping-cart">&nbsp;Shopaholic</a>
     <label for="toggler-btn">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label>
-    <input type="checkbox" id="toggler-btn">
+    <input type="checkbox" id="toggler-btn" name="inp">
 
     <nav class="navbar" id="navbar">
           <!-- navigation -->
@@ -21,13 +21,13 @@
           <a href="about.html">About</a> 
           <a href="contact.html">Contact</a> 
     </nav>
-
     <nav class="toolbar">
-          <a href="#" class="far fa-heart"></a>
-          <a href="cart.html" class="fas fa-dolly-flatbed"></a>
-          <a href="#" class="far fa-user"></a>
+          <a href="#" class="far fa-heart">(<span id="total-amout-in-wishlist">0</span>)</a>
+          <a href="cart.html" class="fas fa-dolly-flatbed">(<span id="total-amout-in-cart">0</span>)</a>
+          <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
     </nav>
-  </header>  
+</header>  
+
 
   <!-- breadcrumb -->
   <section class="bg-light mt-5">
@@ -181,6 +181,6 @@
       </section>
     </footer>
     
-  
+    <script src="js/main.js" defer></script>
 </body>
 </html>

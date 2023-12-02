@@ -4,100 +4,140 @@
 /**
  * comments
  */
+// console.dir(document.body.innerHTML)
+// console.dir(document.title)
+// console.dir(document.head)
 
-// alert("Hello JavaScript"); // function()
+// console.dir(document.body.nav)
+// console.dir(document.body.navbar)
 
-// window.alert(); // method / function
+// let nav = document.getElementsByTagName('nav');
+// console.dir(nav);
 
-// var let const
+// let navbar = document.getElementById('navbar');
+// console.dir(navbar);
 
-var a = 2;
-var c = 2;
+// let navbars = document.getElementsByClassName('navbar')
+// console.dir(navbars);
 
-let d = 2;
-const C = 'HELLO';
+// let input = document.getElementsByName('inp')
+// console.log(input)
 
-{
-    let b = 3;
-    const C = "WORLD";
-    console.log(d * b); // + - * / % **
+// let div = document.querySelector('div')
+// console.dir(div);
+
+// let divs = document.querySelectorAll('div')
+// console.dir(divs);
+
+// let catalog = document.querySelectorAll('.catalog');
+// console.dir(catalog)
+
+// let catalog1 = document.querySelectorAll('#catalog');
+// console.dir(catalog1)
+
+// console.log(divs[80])
+
+// for (let i=0; i<10; i++) {
+//     console.log(divs[i])
+// }
+
+
+// for (let i=0; i<divs.length; i++) {
+//     console.log(divs[i])
+// }
+
+const  totalAmoutInWishlist = document.getElementById("total-amout-in-wishlist");
+console.dir(totalAmoutInWishlist)
+
+// totalAmoutInWishlist.style.color = "red"
+
+// totalAmoutInWishlist.innerText = 55
+
+const  totalAmoutInCart = document.getElementById("total-amout-in-cart");
+console.dir(totalAmoutInCart)
+
+let addToCartButtons = document.querySelectorAll('.add-to-cart');
+console.dir(addToCartButtons);
+
+let addToWishlistButtons = document.querySelectorAll('.add-to-wishlist');
+console.dir(addToWishlistButtons);
+
+// addToCartButtons.forEach(function(button){
+//     console.dir(button);
+// });
+
+// function counter() {
+//     let value = +totalAmoutInWishlist.innerText; 
+//     // parseInt()
+//     return function(increment) {
+//         value += increment;
+//         totalAmoutInWishlist.innerText = value;
+//         totalAmoutInWishlist.style.color = "red";
+//     }
+// }
+// let totalInWishlist = counter();
+
+function counter(total) {
+    let value = +total.innerText; 
+
+    return function(increment) {
+        value += increment;
+        total.innerText = value;
+        total.style.color = "red";
+    }
 }
 
-let b = 13;
-// alert(a + b);
+let totalInWishlist = counter(totalAmoutInWishlist);
+let totalInCart = counter(totalAmoutInCart);
 
-console.log(a + b);
+let products = document.querySelectorAll('.product');
+console.dir("products = ", products);
 
+if (products.length >= 1) {
 
-let my_$block_1_A = "<div><p>Hello</p></div>";
+console.dir(products);
 
-// local scope
-function hello() {
-    console.log("Hello World");
+products.forEach(function(product){
+    // console.log(product.querySelector('h3').innerText);
+    // console.log(product.querySelector('.price').innerText);
+    // console.log(product.querySelector('.add-to-cart'));
+    product.querySelector('.add-to-cart').addEventListener('click', function() {
+        console.log(product.querySelector('h3').innerText);
+        console.log(product.querySelector('.price').innerText);
+        totalInCart(1);
+    })
+});
+
+// products.forEach(function(product){
+    
+//     product.querySelector('.add-to-wishlist').addEventListener('click', function() {
+//         console.log(product.querySelector('h3').innerText);
+//         console.log(product.querySelector('.price').innerText);
+//         totalInWishlist(1);
+//     })
+// });
+
+products.forEach(product => {
+    
+    product.querySelector('.add-to-wishlist').addEventListener('click', () => {
+        console.log(product.querySelector('h3').innerText);
+        console.log(product.querySelector('.price').innerText);
+        totalInWishlist(1);
+    });
+});
+}
+// console.log(parseInt(totalAmoutInWishlist.innerText))
+
+function main() {
+    console.log("DOM loaded")
 }
 
-function hello_msg(msg) {
-    console.log(msg);
+document.addEventListener("DOMContentLoaded", () => {
+
+});
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", main)
+} else {
+    main();
 }
-
-function add(x, y) {
-    return x + y;
-}
-
-hello();
-hello_msg("Hello there");
-let res = add(3, 3);
-console.log(res);
-
-console.log("It's not Ok", 0.1 + 0.2)
-if (0.1 + 0.2 == 0.3) {
-    console.log("It's Ok", 0.1 + 0.2)
-}
-
-// == != >= <= > <  != === !==
-if (0.1 + 0.2 == 0.3) {
-    console.log("It's Ok", 0.1 + 0.2)
-} 
-else if (0.1 + 0.2 === 0.3) {
-    console.log("It's Ok", 0.1 + 0.2)
-}
-else if (0.1 + 0.2 !== 0.3) {
-    console.log("It's Ok", 0.1 + 0.2)
-}
-else {
-    console.log(0.1 + 0.2)
-}
-
-let x = 12, y = 7;
-
-let o = '*'; 
-
-switch (o) {
-    case '+':
-        console.log(x + y);
-        break;
-        case '-':
-            console.log(x - y);
-            break;
-            case '*':
-        console.log(x * y);
-        break;
-        case '/':
-        console.log(x / y);
-        break;
-}
-// like
-let likeIcon = document.querySelector('a.like');
-console.log(likeIcon);
-
-let faHeart = document.querySelector('a.fa-heart span');
-console.log(faHeart);
-
-likeIcon.onclick = () => {
-    // console.log("I'm liki it")
-    console.log(faHeart.textContent)
-    let counter = faHeart.textContent;
-    counter++;
-    faHeart.textContent = counter;
-
-};

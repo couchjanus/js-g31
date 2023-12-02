@@ -38,7 +38,7 @@
   <header class="page-header">
       <a href="#!" class="brand fas fa-shopping-cart">&nbsp;Shopaholic</a>
       <label for="toggler-btn">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label>
-      <input type="checkbox" id="toggler-btn">
+      <input type="checkbox" id="toggler-btn" name="inp">
 
       <nav class="navbar" id="navbar">
             <!-- navigation -->
@@ -49,8 +49,8 @@
             <a href="contact.html">Contact</a> 
       </nav>
       <nav class="toolbar">
-            <a href="#" class="far fa-heart">(<span>0</span>)</a>
-            <a href="cart.html" class="fas fa-dolly-flatbed"></a>
+            <a href="#" class="far fa-heart">(<span id="total-amout-in-wishlist">0</span>)</a>
+            <a href="cart.html" class="fas fa-dolly-flatbed">(<span id="total-amout-in-cart">0</span>)</a>
             <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
       </nav>
   </header>  
@@ -179,9 +179,9 @@
         <div class="product-container">
           <div class="product">
             <div class="icons">
-              <a href="#" class="fas fa-shopping-cart"></a>
-              <a href="#" class="fas fa-heart like"></a>
-              <a href="#productView" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
+              <a href="#" class="fas fa-heart add-to-wishlist"></a>
+              <a href="#productView" class="fas fa-eye detail"></a>
             </div>
             <div class="image">
               <div class="badge text-white bg-sale">Sale</div>
@@ -189,30 +189,30 @@
             </div>
 
             <div class="content">
-              <h3>Product Name</h3>
+              <h3>Product Name 1</h3>
               <div class="price">12</div>
             </div>
           </div>
           <div class="product">
             <div class="icons">
-              <a href="#" class="fas fa-shopping-cart"></a>
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#productView" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
+              <a href="#" class="fas fa-heart add-to-wishlist"></a>
+              <a href="#productView" class="fas fa-eye detail"></a>
             </div>
             <div class="image">
               <img src="images/product-2.jpg">
             </div>
 
             <div class="content">
-              <h3>Product Name</h3>
+              <h3>Product Name 2</h3>
               <div class="price">12</div>
             </div>
           </div>
           <div class="product">
             <div class="icons">
-              <a href="#" class="fas fa-shopping-cart"></a>
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#productView" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
+              <a href="#" class="fas fa-heart add-to-wishlist"></a>
+              <a href="#productView" class="fas fa-eye detail"></a>
             </div>
             <div class="image">
               <div class="badge text-white bg-sale">Sale</div>
@@ -220,15 +220,15 @@
             </div>
 
             <div class="content">
-              <h3>Product Name</h3>
+              <h3>Product Name 3</h3>
               <div class="price">12</div>
             </div>
           </div>
           <div class="product">
             <div class="icons">
-              <a href="#" class="fas fa-shopping-cart"></a>
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#productView" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
+              <a href="#" class="fas fa-heart add-to-wishlist"></a>
+              <a href="#productView" class="fas fa-eye detail"></a>
             </div>
 
             <div class="image">
@@ -236,15 +236,15 @@
             </div>
 
             <div class="content">
-              <h3>Product Name</h3>
+              <h3>Product Name 4</h3>
               <div class="price">12</div>
             </div>
           </div>
           <div class="product">
             <div class="icons">
-              <a href="#" class="fas fa-shopping-cart"></a>
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#productView" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
+              <a href="#" class="fas fa-heart add-to-wishlist"></a>
+              <a href="#productView" class="fas fa-eye detail"></a>
             </div>
 
             <div class="image">
@@ -253,15 +253,15 @@
             </div>
 
             <div class="content">
-              <h3>Product Name</h3>
+              <h3>Product Name 5</h3>
               <div class="price">12</div>
             </div>
           </div>
           <div class="product">
             <div class="icons">
-              <a href="#" class="fas fa-shopping-cart"></a>
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#productView" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
+              <a href="#" class="fas fa-heart add-to-wishlist"></a>
+              <a href="#productView" class="fas fa-eye detail"></a>
             </div>
 
             <div class="image">
@@ -269,15 +269,15 @@
             </div>
 
             <div class="content">
-              <h3>Product Name</h3>
+              <h3>Product Name 6</h3>
               <div class="price">12</div>
             </div>
           </div>
           <div class="product">
             <div class="icons">
-              <a href="#" class="fas fa-shopping-cart"></a>
-              <a href="#" class="fas fa-heart"></a>
-              <a href="#productView" class="fas fa-eye"></a>
+              <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
+              <a href="#" class="fas fa-heart add-to-wishlist"></a>
+              <a href="#productView" class="fas fa-eye detail"></a>
             </div>
 
             <div class="image">
@@ -285,7 +285,7 @@
             </div>
 
             <div class="content">
-              <h3>Product Name</h3>
+              <h3>Product Name 7</h3>
               <div class="price">12</div>
             </div>
           </div>
