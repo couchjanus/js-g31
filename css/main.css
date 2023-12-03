@@ -1335,8 +1335,15 @@ ul.categories li:nth-child(even) {/* all even-numbered children: */
     border: 2px solid red;
 }
 
+input[type='number'] {
+    appearance: textfield;
+}
 
 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
 .info-button {
     grid-column: 1 / 3;
     grid-row: 4;
