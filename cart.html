@@ -7,7 +7,7 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="cart-page">
   <header class="page-header">
     <a href="#!" class="brand fas fa-shopping-cart">&nbsp;Shopaholic</a>
     <label for="toggler-btn">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label>
@@ -44,15 +44,11 @@
       </div>
   </section>
 
-  <section class="py-5">
+  <section class="">
       
         <div class="container">
           <div class="cart-wrapper">
-          
-            <div class="cart-header"><h3 class="text-uppercase mb-3">Shopping cart</h3></div>
-            
             <div class="cart-content">
-  
               <div class="table-responsive mb-4">
                   
                   <table class="table text-nowrap">
@@ -68,56 +64,7 @@
                       </tr>
                     </thead>
                     
-                    <tbody>
-                      <tr>
-                        <td class="py-3 align-middle">
-                          <a class="reset-anchor d-block" href="detail.html"><img src="images/product-4.jpg" alt="..." width="40"></a>
-                          
-                          
-                        </td>
-                        <td class="py-3 align-middle">
-                          
-                          <strong><a class="reset-anchor" href="detail.html">Red digital smartwatch</a></strong>
-                        </td>
-                        <td class="p-3 align-middle">
-                          <p class="mb-0 small">$250</p>
-                        </td>
-                        
-                        <td class="p-3 align-middle">
-                            <div class="quantity">
-                              <button><i class="fas fa-caret-left"></i></button>
-                              <input type="text" value="1">
-                              <button><i class="fas fa-caret-right"></i></button>
-                            </div>
-                        </td>
-                        <td class="p-3 align-middle"><p>$250</p></td>
-                        <td class="p-3 align-middle"><a class="reset-anchor remove" href="#!"><i class="fas fa-trash-alt small text-muted"></i></a></td>
-                      </tr>
-                      
-                      <tr>
-                        <td class="py-3 align-middle">
-                          <a class="reset-anchor d-block" href="detail.html"><img src="images/product-5.jpg" alt="..." width="40"></a>
-                        
-                          
-                        </td>
-                        <td class="py-3 align-middle">
-                          
-                          <strong><a class="reset-anchor align-middle" href="detail.html">Apple watch</a></strong>
-                        </td>
-                        <td class="align-middle"><p class="price">250</p></td>
-                        <td class="align-middle">
-                            <div class="quantity">
-                              <button><i class="fas fa-caret-left"></i></button>
-                              <input type="text" value="1">
-                              <button><i class="fas fa-caret-right"></i></button>
-                            </div>
-                        </td>
-                        <td class="align-middle">
-                          <p class="mb-0 total">250</p>
-                        </td>
-                        <td class="align-middle"><a class="reset-anchor remove" href="#!"><i class="fas fa-trash-alt"></i></a></td>
-                      </tr>
-                    </tbody>
+                    <tbody class="cart-items"></tbody>
                   </table>
               </div>
               
@@ -131,16 +78,16 @@
                     <ul class="list-unstyled">
                       <li class="d-flex align-items-center justify-content-between">
                         <strong class="text-uppercase">Subtotal: </strong>&nbsp;
-                        <span class="subtotal">250</span>
+                        <span class="cart-subtotal">250</span>
                       </li>
                       <li class="d-flex align-items-center justify-content-between">
                         <strong class="text-uppercase">Tax: </strong>&nbsp;
-                        <span class="subtotal">25</span>
+                        <span class="cart-tax">25</span>
                       </li>
                       <li class="border-bottom my-2"></li>
                       <li class="d-flex align-items-center justify-content-between mb-4">
                         <strong class="text-uppercase">Total:</strong>&nbsp;
-                        <span class="total">275</span>
+                        <span class="cart-total">275</span>
                       </li>
                       <li>
                         <form action="#">
@@ -229,6 +176,8 @@
       </ul>
     </section>
   </footer>
-  <script src="js/main.js" defer></script>
+  <script src="js/db.js" defer></script>
+  <script src="js/main.js" type="module"></script>
+
 </body>
 </html>

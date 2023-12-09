@@ -796,7 +796,7 @@ form {
     grid-auto-rows: minmax(100px, auto);
     grid-template-columns: 1fr;
     grid-template-areas:
-      "hd"
+      /* "hd" */
       "main"
       "sd"
       "ft";
@@ -807,7 +807,7 @@ form {
     .cart-wrapper {
       grid-template-columns: repeat(12, 1fr);
       grid-template-areas:
-        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        /* "hd hd hd hd hd hd hd hd hd hd hd hd" */
         "main main main main main main main main main main main main"
         "sd sd sd sd sd sd sd sd sd sd sd sd"
         "ft ft ft ft ft ft ft ft ft ft ft ft";
@@ -816,7 +816,7 @@ form {
   @media (min-width: 700px) {
     .cart-wrapper {
       grid-template-areas:
-        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        /* "hd hd hd hd hd hd hd hd hd hd hd hd" */
         "main main main main main main main main main sd sd sd"
         "ft ft ft ft ft ft ft ft ft ft ft ft";
     }
