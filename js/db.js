@@ -207,78 +207,78 @@ let categories = [
 		id: 1,
 		image: "https://couchjanus.github.io/images/product-1.jpg",
 		section: "Electronics",
-    name: "Headphones"
+    	name: "Headphones"
 	},
 	{ 
     id: 2,
-    name: "Bags",
+    	name: "Bags",
 		image: "https://couchjanus.github.io/images/product-2.jpg",
-		section: "Health & Beauty",
+		section: "Beauty",
 	},
 	{
 		id: 3,
 		image: "https://couchjanus.github.io/images/product-3.jpg",
 		name: "T-Shirts",
-    section: "Fashion & Acc"
+    	section: "Fashion"
 	},
 	{
 		id: 4,
 		image: "https://couchjanus.github.io/images/product-4.jpg",
 		name: "Smartwatches",
-    section: "Electronics"
+    	section: "Electronics"
 	},
 	{
 		id: 5,
 		image: "https://couchjanus.github.io/images/product-5.jpg",
 		name: "Shoes",
-    section: "Fashion & Acc"
+    	section: "Shoes"
 	},
 
 	{
 		id: 6,
 		image: "https://couchjanus.github.io/images/product-7.jpg",
 		name: "Parphume",
-    section: "Health & Beauty"
+    	section: "Health"
 	},
 	{
 		id: 7,
 		image: "https://couchjanus.github.io/images/product-9.jpg",
 		name: "Watches",
-    section: "Health & Beauty",
+    	section: "Watches",
 	},
 
 	{
 		id: 8,
 		image: "https://couchjanus.github.io/images/product-8.jpg",
 		name: "Apple Watch",
-    section: "Electronics"
+    	section: "Watches"
 	},
                       
 	{
 		id: 9,
 		image: "https://couchjanus.github.io/images/product-9.jpg",
 		name: "Byron Watch",
-    section: "Health & Beauty"
+    	section: "Watches"
 	},
                    
 	{
 		id: 10,
 		image: "https://couchjanus.github.io/images/product-10.jpg",
 		name: "Camera",
-    section: "Electronics"
+    	section: "Electronics"
 	},
 	{
 		id: 11,
 		image: "https://couchjanus.github.io/images/product-11.jpg",
 		name: "Nike shoes",
-    section: "Fashion & Acc"
+    	section: "Shoes"
 	},
 
 	{
 		id: 12,
 		image: "https://couchjanus.github.io/images/product-12.jpg",
 		name: "DSLR lense",
-    section: "Electronics"
+    	section: "Electronics"
 	},
 
 ];

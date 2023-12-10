@@ -7,28 +7,7 @@ import {detailButton} from '/js/modules/modal.js';
 
 import {populateShoppingCart, renderCart} from '/js/modules/cart.js';
 import {cartItemsAmount} from '/js/modules/helpers.js';
-
-// const  totalAmoutInWishlist = document.getElementById("total-amout-in-wishlist");
-
-
-// let addToCartButtons = document.querySelectorAll('.add-to-cart');
-
-
-// let addToWishlistButtons = document.querySelectorAll('.add-to-wishlist');
-
-
-// function counter(total) {
-//     let value = +total.innerText; 
-
-//     return function(increment) {
-//         value += increment;
-//         total.innerText = value;
-//         total.style.color = "red";
-//     }
-// }
-
-// let totalInWishlist = counter(totalAmoutInWishlist);
-// let totalInCart = counter(totalAmoutInCart);
+import {populateCategories, renderCategory, renderShowOnly, renderSelect} from '/js/modules/categories.js';
 
 
 let cart = [];
@@ -45,6 +24,24 @@ function main() {
 
         addProductToCartButton(cart);
         detailButton(cart, products);
+
+        const selectPicker = document.querySelector('.selectpicker');
+        if(selectPicker) {
+            renderSelect(selectPicker, products, productContainer, cart);
+        }
+
+        const categoryContainer = document.getElementById('category-container');
+
+        if (categoryContainer) {
+            populateCategories(categoryContainer, categories);
+            renderCategory(productContainer, '#category-container', products, cart)
+        }
+
+        const showOnly = document.querySelector('.show-only');
+
+        if (showOnly) {
+            renderShowOnly(showOnly, products, productContainer);
+        }
     }
     
 

@@ -27,18 +27,18 @@
           <a href="cart.html" class="fas fa-dolly-flatbed">(<span id="total-amout-in-cart">0</span>)</a>
           <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
     </nav>
-</header>  
+  </header>  
 
 
     <!-- breadcrumb -->
     <section class="bg-light mt-5">
         <div class="container py-5">
           <div class="breadcrumb-container">
-            <div class="breadcrumb-title">Shopping cart</div>
+            <div class="breadcrumb-title">All products</div>
             
             <ul class="breadcrumb">
                   <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active">Cart</li>
+                  <li class="breadcrumb-item active">Catalog</li>
             </ul>
             
           </div>
@@ -51,138 +51,20 @@
         <div class="container catalog-container">
             <aside>
                 <h2 class="text-uppercase mb-4">Categories</h2>
+                <span id="category-container"></span>
+                <h2 class="text-uppercase mb-4">Show only</h2>
+                <span class="show-only"></span>
                 
-                <div class="py-2 px-4 bg-dark text-white mb-3">
-                    <strong class="small text-uppercase fw-bold">Fashion &amp; Acc</strong>
-                </div>
-                
-                <ul class="list-unstyled categories small text-muted">
-                    <li><a class="reset-anchor" href="#!">Women's T-Shirts</a></li>
-                    <li><a class="reset-anchor" href="#!">Men's T-Shirts</a></li>
-                    <li><a class="reset-anchor" href="#!">Dresses</a></li>
-                    <li><a class="reset-anchor" href="#!">Novelty socks</a></li>
-                    <li><a class="reset-anchor" href="#!">Women's sunglasses</a></li>
-                    <li><a class="reset-anchor" href="#!">Men's sunglasses</a></li>
-                </ul>
             </aside>
             <main>
                 <header class="header">
                     <h2>Our <span>Products</span></h2>
                 </header>
+
+                <select class="selectpicker"></select>
     
                 <div class="product-container">
-                  <div class="product">
-                    <div class="icons">
-                      <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
-                      <a href="#" class="fas fa-heart add-to-wishlist"></a>
-                      <a href="#productView" class="fas fa-eye detail"></a>
-                    </div>
-                    <div class="image">
-                      <div class="badge text-white bg-sale">Sale</div>
-                      <img src="images/product-1.jpg">
-                    </div>
-        
-                    <div class="content">
-                      <h3>Product Name 1</h3>
-                      <div class="price">12</div>
-                    </div>
-                  </div>
-                  <div class="product">
-                    <div class="icons">
-                      <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
-                      <a href="#" class="fas fa-heart add-to-wishlist"></a>
-                      <a href="#productView" class="fas fa-eye detail"></a>
-                    </div>
-                    <div class="image">
-                      <img src="images/product-2.jpg">
-                    </div>
-        
-                    <div class="content">
-                      <h3>Product Name 2</h3>
-                      <div class="price">12</div>
-                    </div>
-                  </div>
-                  <div class="product">
-                    <div class="icons">
-                      <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
-                      <a href="#" class="fas fa-heart add-to-wishlist"></a>
-                      <a href="#productView" class="fas fa-eye detail"></a>
-                    </div>
-                    <div class="image">
-                      <div class="badge text-white bg-sale">Sale</div>
-                      <img src="images/product-3.jpg">
-                    </div>
-        
-                    <div class="content">
-                      <h3>Product Name 3</h3>
-                      <div class="price">12</div>
-                    </div>
-                  </div>
-                  <div class="product">
-                    <div class="icons">
-                      <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
-                      <a href="#" class="fas fa-heart add-to-wishlist"></a>
-                      <a href="#productView" class="fas fa-eye detail"></a>
-                    </div>
-        
-                    <div class="image">
-                      <img src="images/product-4.jpg">
-                    </div>
-        
-                    <div class="content">
-                      <h3>Product Name 4</h3>
-                      <div class="price">12</div>
-                    </div>
-                  </div>
-                  <div class="product">
-                    <div class="icons">
-                      <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
-                      <a href="#" class="fas fa-heart add-to-wishlist"></a>
-                      <a href="#productView" class="fas fa-eye detail"></a>
-                    </div>
-        
-                    <div class="image">
-                      <div class="badge text-white bg-new">New</div>
-                      <img src="images/product-7.jpg">
-                    </div>
-        
-                    <div class="content">
-                      <h3>Product Name 5</h3>
-                      <div class="price">12</div>
-                    </div>
-                  </div>
-                  <div class="product">
-                    <div class="icons">
-                      <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
-                      <a href="#" class="fas fa-heart add-to-wishlist"></a>
-                      <a href="#productView" class="fas fa-eye detail"></a>
-                    </div>
-        
-                    <div class="image">
-                      <img src="images/product-5.jpg">
-                    </div>
-        
-                    <div class="content">
-                      <h3>Product Name 6</h3>
-                      <div class="price">12</div>
-                    </div>
-                  </div>
-                  <div class="product">
-                    <div class="icons">
-                      <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
-                      <a href="#" class="fas fa-heart add-to-wishlist"></a>
-                      <a href="#productView" class="fas fa-eye detail"></a>
-                    </div>
-        
-                    <div class="image">
-                      <img src="images/product-6.jpg">
-                    </div>
-        
-                    <div class="content">
-                      <h3>Product Name 7</h3>
-                      <div class="price">12</div>
-                    </div>
-                  </div>
+                  
                 </div>
             </main>
     
@@ -265,8 +147,10 @@
     </ul>
   </section>
 </footer>
+<div class="modal-window"></div>
 
-
-<script src="js/main.js" defer></script>
+<script src="js/db.js" defer></script>
+<script src="js/main.js" type="module" defer>
+</script>
 </body>
 </html>
