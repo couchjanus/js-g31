@@ -1,6 +1,6 @@
 const contacts = {
     address: {
-        icon: 'map-marker-1',
+        // icon: 'map-marker-1',
         title: 'Address',
         street: '13/25 New Avenue',
         city: 'New Heaven, ',
@@ -9,13 +9,13 @@ const contacts = {
     },
   
     call_center: {
-        icon: 'helpline-24h-1',
+        // icon: 'helpline-24h-1',
         title: 'Call center',
         note: 'This number is toll free if calling from Ukraine.otherwise we advise you to use the',
         phone: '+38 555 444 333',
     },
     support: {
-        icon: 'envelope-1',
+        // icon: 'envelope-1',
         title: 'Electronic support',
         note: 'Please feel free to write an email to us or to use our electronic ticketing system.',
         email: 'info@fakeemail.com',

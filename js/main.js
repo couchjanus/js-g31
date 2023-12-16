@@ -9,6 +9,24 @@ import {populateShoppingCart, renderCart} from '/js/modules/cart.js';
 import {cartItemsAmount} from '/js/modules/helpers.js';
 import {populateCategories, renderCategory, renderShowOnly, renderSelect} from '/js/modules/categories.js';
 
+import Footer from './components/footer.js';
+customElements.define('footer-component', Footer);
+
+
+import Divider from './components/divider.js';
+customElements.define('divider-component', Divider);
+import Breadcrumb from './components/breadcrumb.js';
+customElements.define('breadcrumb-component', Breadcrumb);
+
+import Services from './components/services.js';
+customElements.define('services-component', Services);
+
+import Login from './components/login.js';
+customElements.define('login-component', Login);
+
+import Contact from './components/contact.js';
+customElements.define('contact-component', Contact);
+
 
 let cart = [];
 let wishlist = [];

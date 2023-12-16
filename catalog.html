@@ -9,41 +9,27 @@
 
 <body>
 
-  <header class="page-header">
-    <a href="#!" class="brand fas fa-shopping-cart">&nbsp;Shopaholic</a>
-    <label for="toggler-btn">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label>
-    <input type="checkbox" id="toggler-btn" name="inp">
-
-    <nav class="navbar" id="navbar">
-          <!-- navigation -->
-          <a href="index.html">Home</a> 
-          <a href="catalog.html">Catalog</a> 
-          <a href="blog.html">Blog</a> 
-          <a href="about.html">About</a> 
-          <a href="contact.html">Contact</a> 
-    </nav>
-    <nav class="toolbar">
-          <a href="#" class="far fa-heart">(<span id="total-amout-in-wishlist">0</span>)</a>
-          <a href="cart.html" class="fas fa-dolly-flatbed">(<span id="total-amout-in-cart">0</span>)</a>
-          <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
-    </nav>
-  </header>  
-
-
+    <header class="page-header">
+        <a href="#!" class="brand fas fa-shopping-cart">&nbsp;Shopaholic</a>
+        <label for="toggler-btn">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label>
+        <input type="checkbox" id="toggler-btn" name="inp">
+  
+        <nav class="navbar" id="navbar">
+              <!-- navigation -->
+              <a href="index.html">Home</a> 
+              <a href="catalog.html">Catalog</a> 
+              <a href="blog.html">Blog</a> 
+              <a href="about.html">About</a> 
+              <a href="contact.html">Contact</a> 
+        </nav>
+        <nav class="toolbar">
+              <a href="#" class="far fa-heart">(<span id="total-amout-in-wishlist">0</span>)</a>
+              <a href="cart.html" class="fas fa-dolly-flatbed">(<span id="total-amout-in-cart">0</span>)</a>
+              <a href="#!" onclick="window.signin.shadowRoot.querySelector('#login').showModal();" class="far fa-user"></a>
+        </nav>
+    </header>  
     <!-- breadcrumb -->
-    <section class="bg-light mt-5">
-        <div class="container py-5">
-          <div class="breadcrumb-container">
-            <div class="breadcrumb-title">All products</div>
-            
-            <ul class="breadcrumb">
-                  <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active">Catalog</li>
-            </ul>
-            
-          </div>
-        </div>
-    </section>
+    <breadcrumb-component title="ALL PRODUCTS" page_title="CATALOG"></breadcrumb-component>
 
     <!-- catalog -->
 
@@ -70,12 +56,8 @@
     
         </div>
 
-    </section>
-
-    
-
-   
-      <!-- divider -->
+    </section>   
+    <!-- divider -->
     <section class="divider bg-cover bg-center bg-fixed py-5 mt-5" style="background: url(./images/divider-bg.jpg)">
           <!-- container -->
           <div class="container py-5 px-4 text-right">
@@ -86,69 +68,10 @@
     </section>
     
 
-<footer>
-  <!-- Footer main -->
-  <section class="footer-main">
-    <div class="footer-main-item">
-      <h2 class="footer-title">About</h2>
-      <ul>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Customers</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
-    </div>
-    <div class="footer-main-item">
-      <h2 class="footer-title">Resources</h2>
-      <ul>
-        <li><a href="#">Docs</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">eBooks</a></li>
-        <li><a href="#">Webinars</a></li>
-      </ul>
-    </div>
-    <div class="footer-main-item">
-      <h2 class="footer-title">Contact</h2>
-      <ul>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Sales</a></li>
-        <li><a href="#">Advertise</a></li>
-      </ul>
-    </div>
-    <div class="footer-main-item">
-      <h2 class="footer-title">Stay Updated</h2>
-      <p>Subscribe to our newsletter to get our latest news.</p>
-      <form>
-        <input type="email" name="email" placeholder="Enter email address">
-        <input type="submit" value="Subscribe">
-      </form>
-    </div>
-  </section>
+    <footer-component></footer-component>
 
-  <!-- Footer social -->
-  <section class="footer-social">
-    <ul class="footer-social-list">
-      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-      <li><a href="#"><i class="fab fa-github"></i></a></li>
-      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-    </ul>
-  </section>
-
-  <!-- Footer legal -->
-  <section class="footer-legal">
-    <ul class="footer-legal-list">
-      <li><a href="#">Terms &amp; Conditions</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-      <li>&copy; 2024 Copyright Shopaholic Inc.</li>
-    </ul>
-  </section>
-</footer>
 <div class="modal-window"></div>
-
+<login-component id="signin"></login-component>
 <script src="js/db.js" defer></script>
 <script src="js/main.js" type="module" defer>
 </script>
