@@ -16,3 +16,23 @@ export function cartItemsAmount(cart) {
     }
     totalAmoutInCart.innerText = cart.reduce((prev, cur)=>prev+cur.amount, 0);
 }
+
+export async function fetchData(url) {
+    return await fetch(url, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(response => {
+        if(response.status >= 400){ // 100 200 300 400 500
+            return response.json()
+            .then(err => {
+                const error = new Error('Something went wrong.')
+                error.data = err;
+                throw error;
+            }); 
+        }
+        return response.json();
+    })
+}
